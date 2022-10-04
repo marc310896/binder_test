@@ -1,0 +1,1848 @@
+<?xml version='1.0' encoding='utf-8'?>
+<DataReport xmlns="http://www.iupac.org/namespaces/ThermoML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iupac.org/namespaces/ThermoML ThermoML.xsd">
+  <Version>
+    <nVersionMajor>4</nVersionMajor>
+    <nVersionMinor>0</nVersionMinor>
+  </Version>
+  <Citation>
+    <sTitle>Axial Diffusion in Liquid Saturated Cylindrical Silica Model Pores</sTitle>
+    <sAuthor>Hamzeh Kraus</sAuthor>
+    <sAuthor>Marc Hoegler</sAuthor>
+    <sAuthor>Niels Hansen</sAuthor>
+    <sDOI>DOI</sDOI>
+  </Citation>
+  <Compound>
+    <RegNum>
+      <nOrgNum>1OL</nOrgNum>
+    </RegNum>
+    <sCommonName>methanol</sCommonName>
+    <sSmiles>CO</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>2OL</nOrgNum>
+    </RegNum>
+    <sCommonName>ethanol</sCommonName>
+    <sSmiles>CCO</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>3OL</nOrgNum>
+    </RegNum>
+    <sCommonName>1-propanol</sCommonName>
+    <sSmiles>CCCO</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>4OL</nOrgNum>
+    </RegNum>
+    <sCommonName>1-butanol</sCommonName>
+    <sSmiles>CCCCO</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>BEN</nOrgNum>
+    </RegNum>
+    <sCommonName>benzene</sCommonName>
+    <sSmiles>C1=CC=CC=C1</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>TOL</nOrgNum>
+    </RegNum>
+    <sCommonName>toluene</sCommonName>
+    <sSmiles>CC1=CC=CC=C1</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>PYR</nOrgNum>
+    </RegNum>
+    <sCommonName>pyrrol</sCommonName>
+    <sSmiles>C1=CNC=C1</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>PYN</nOrgNum>
+    </RegNum>
+    <sCommonName>pyridine</sCommonName>
+    <sSmiles> C1=CC=NC=C1</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>6AN</nOrgNum>
+    </RegNum>
+    <sCommonName>hexane</sCommonName>
+    <sSmiles>CCCCCC</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>7AN</nOrgNum>
+    </RegNum>
+    <sCommonName>heptane</sCommonName>
+    <sSmiles>CCCCCCC</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>C5N</nOrgNum>
+    </RegNum>
+    <sCommonName>cyclopentane</sCommonName>
+    <sSmiles>C1CCCC1</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>C6N</nOrgNum>
+    </RegNum>
+    <sCommonName>cyclohexane</sCommonName>
+    <sSmiles>C1CCCCC1</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>SOL</nOrgNum>
+    </RegNum>
+    <sCommonName>water</sCommonName>
+    <sSmiles>O</sSmiles>
+  </Compound>
+  <Compound>
+    <RegNum>
+      <nOrgNum>THF</nOrgNum>
+    </RegNum>
+    <sCommonName>tetrahydrofuran</sCommonName>
+    <sSmiles>C1CCOC1</sSmiles>
+  </Compound>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_1OL_GAFF-DC</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>1OL</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>1OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>1OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>1OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>787.8</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>2.01</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>1.99</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_2OL_GAFF-DC</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>2OL</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>2OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>2OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>2OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>793.41</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>0.59</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>0.69</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_3OL_GAFF-DC</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>3OL</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>3OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>3OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>3OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>799.33</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>0.29</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>0.39</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_4OL_GAFF-DC</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>4OL</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>4OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>4OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>4OL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>803.3</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>0.16</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>0.24</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_BEN_GAFF</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>BEN</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>BEN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>BEN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>BEN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>867.58</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>2.24</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>2.27</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_TOL_GAFF</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>TOL</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>TOL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>TOL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>TOL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>851.57</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>2.08</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>2.06</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_PYR_GAFF</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>PYR</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>PYR</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>PYR</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>PYR</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>1000.37</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>0.79</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>0.78</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_PYN_GAFF</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>PYN</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>PYN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>PYN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>PYN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>988.26</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>1.22</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>1.2</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_6AN_AMBER-ii</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>6AN</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>6AN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>6AN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>6AN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>665.99</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>3.67</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>3.7</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_7AN_AMBER-ii</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>7AN</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>7AN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>7AN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>7AN</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>691.56</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>2.68</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>2.79</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_C5N_AMBER-ii</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>C5N</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>C5N</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>C5N</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>C5N</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>743.21</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>3.14</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>3.13</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_C6N_AMBER-ii</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>C6N</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>C6N</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>C6N</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>C6N</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>772.35</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>1.44</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>1.42</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_SOL_AMBER</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>SOL</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>SOL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>SOL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>SOL</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>997.83</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>2.25</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>2.17</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+  <PureOrMixtureData>
+    <nPureOrMixtureDataNumber>pure_dens_diff_THF_GAFF2</nPureOrMixtureDataNumber>
+    <sCompiler>Kraus, Hoegler</sCompiler>
+    <Component>
+      <RegNum>
+        <nOrgNum>THF</nOrgNum>
+      </RegNum>
+    </Component>
+    <Property>
+      <nPropNumber>dens</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <VolumetricProp>
+            <ePropName>Mass density, kg/m3</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </VolumetricProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>THF</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (E)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>THF</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Property>
+      <nPropNumber>diff (S)</nPropNumber>
+      <Property-MethodID>
+        <PropertyGroup>
+          <TransportProp>
+            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <eMethodName>simulation</eMethodName>
+          </TransportProp>
+        </PropertyGroup>
+        <RegNum>
+          <nOrgNum>THF</nOrgNum>
+        </RegNum>
+      </Property-MethodID>
+      <PropUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </PropUncertainty>
+    </Property>
+    <Variable>
+      <nVarNumber>temp</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <eTemperature>Temperature, K</eTemperature>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <Variable>
+      <nVarNumber>press</nVarNumber>
+      <VariableID>
+        <VariableType>
+          <ePressure>Pressure, kPa</ePressure>
+        </VariableType>
+      </VariableID>
+      <VarUncertainty>
+        <nUncertAssessNum>1</nUncertAssessNum>
+      </VarUncertainty>
+    </Variable>
+    <NumValues ID="density">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>dens</nPropNumber>
+        <nPropValue>887.09</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Einstein)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (E)</nPropNumber>
+        <nPropValue>1.65</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="diffusion (Smoluchwoski)">
+      <VariableValue>
+        <nVarNumber>temp</nVarNumber>
+        <nVarValue>295.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>press</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>diff (S)</nPropNumber>
+        <nPropValue>1.72</nPropValue>
+      </PropertyValue>
+    </NumValues>
+  </PureOrMixtureData>
+</DataReport>
