@@ -1,2 +1,4 @@
 poreana
 porems
+mdanalysis
+nglview
