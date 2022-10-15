@@ -1,0 +1,16 @@
+name: binder
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pip
+  - mdanalysis
+  - ipython
+  - nglview
+  - ipywidgets
+  - pip:
+    - poreana
+    - porems
+    - pandas
+    - matplotlib
