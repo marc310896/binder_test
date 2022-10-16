@@ -1,5 +1,0 @@
-poreana
-porems
-mdanalysis
-nglview
-ipywidgets
