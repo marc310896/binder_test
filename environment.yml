@@ -9,7 +9,6 @@ dependencies:
   - ipython
   - nglview
   - ipywidgets=7.6.0
-  - jupyterlab
   - pip:
     - poreana
     - porems
