@@ -1,16 +1,19 @@
 name: binder
 channels:
   - conda-forge
-  - defaults
+
 dependencies:
-  - python
-  - numpy
+  - python>=3.6
   - pip
-  #- ipython
-  #- ipywidgets    
+  - pytest
+  - jupyterlab
+  - nodejs
+  - yarn
+  - ipython
+  - ipywidgets==7.*   
   - matplotlib
-  - mdanalysis>=1.1.1
-  - mdanalysistests>=1.1.1
+  - mdanalysis
+  - mdanalysistests
   - mdanalysisdata
   - nglview
   - pip:
