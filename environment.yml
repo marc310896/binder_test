@@ -3,11 +3,8 @@ channels:
   - conda-forge
 
 dependencies:
-  - python>=3.6
+  - python>=3.8
   - pip
-  - pytest
-  - nodejs
-  - yarn
   - ipython
   - ipywidgets==7.*   
   - matplotlib
