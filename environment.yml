@@ -21,3 +21,4 @@ dependencies:
     - porems
     - pandas
     - matplotlib
+    - tabulate
